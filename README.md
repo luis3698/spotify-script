@@ -24,18 +24,28 @@ Before running the script, make sure you have the following:
 
 ## Usage
 
-1. Set your Spotify client credentials by replacing the placeholders in the script:
+1. Obtain your Spotify client credentials by following these steps:
 
-   ```javascript
-   const clientId = 'YOUR_CLIENT_ID';
-   const clientSecret = 'YOUR_CLIENT_SECRET';
-   ```
+   - Visit the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/) and log in with your Spotify account.
+   - Create a new application by clicking on the "Create an App" button.
+   - Fill in the necessary information and submit the form to create your application.
+   - Once your application is created, you will see your client ID and client secret on the application's dashboard. Replace the placeholders in the script with your actual credentials:
 
-2. Set the playlist ID of the playlist you want to extract URLs from:
+     ```javascript
+     const clientId = 'YOUR_CLIENT_ID';
+     const clientSecret = 'YOUR_CLIENT_SECRET';
+     ```
 
-   ```javascript
-   const playlistId = 'YOUR_PLAYLIST_ID';
-   ```
+2. Determine the playlist ID of the playlist you want to extract URLs from:
+
+   - Open Spotify and navigate to the desired playlist.
+   - Click on the three dots (...) next to the playlist name and select "Share" from the context menu.
+   - Choose the "Copy Spotify URI" option.
+   - Paste the URI into a text editor, and extract the playlist ID from the URI. It should look something like this: `spotify:playlist:YOUR_PLAYLIST_ID`. Replace the placeholder in the script with your actual playlist ID:
+
+     ```javascript
+     const playlistId = 'YOUR_PLAYLIST_ID';
+     ```
 
 3. Run the script using the following command:
 
